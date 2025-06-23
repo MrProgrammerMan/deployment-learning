@@ -8,7 +8,7 @@ use askama::{
 use axum::response::Html;
 
 #[derive(Template)]
-#[template(path = "index.html")]
+#[template(path = "home.html")]
 struct HomeTemplate {}
 
 #[derive(Template)]

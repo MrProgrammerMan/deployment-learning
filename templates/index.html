@@ -5,21 +5,21 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>{% block title %}Quote or Bloat{% endblock %}</title>
     <link rel="stylesheet" href="http://localhost:9000/css/main.css">
+    {% block head %}{% endblock %}
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/quotes">Quotes</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>¿Quote or Bloat?</h1>
-        <p>Welcome to quote or bloat!</p>
-    </main>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/quotes">Quotes</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    {% block main %}{% endblock %}
+</main>
 </body>
 </html>
